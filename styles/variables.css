@@ -1,1 +1,60 @@
 /* В этом файле будут храниться все значения переменных в исходном состоянии, а так же их изменения в зависимости от ширины устройства */
+:root{
+    /*Colors*/
+    --secondary-color: #fff;
+    --main-color: rgba(0, 0, 0, 1);
+    --bg-image:repeating-linear-gradient(
+        to right,
+        #d3d3d3 0px,
+        #d3d3d3 2px,
+        transparent 2px,
+        transparent 4px
+      ),
+      repeating-linear-gradient(
+        to bottom,
+        #d3d3d3 0px,
+        #d3d3d3 2px,
+        transparent 2px,
+        transparent 4px
+      ),
+      linear-gradient(
+        to bottom,
+        #e7e7e7 0%,
+        #e7e7e7 0.01%,
+        #1a1a1a 100%
+      );
+    --backdrop-color: rgb(0 0 0 / 0.75);
+
+    /*Metrics*/
+    --space-xl: 100px;
+    --space-l: 50px;
+    --space-m: 25px;
+    --space-s: 20px;
+    --content-width: clamp(375px, 100%, 700px);
+    --border-width: 2px;
+    --logo-size: clamp(343px, 100%, 455px);
+    --header-padding-block: 130px;
+    --button-s-height: 38px;
+    --button-m-height: 55px;
+
+    /* Fonts */
+    --font-main: 'Inter', sans-serif;
+    --font-accent: 'PressStart2P', fantasy;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+    --font-size-large: clamp(49px, 9vw, 65px);
+    --font-size-medium: clamp(0.875rem, 0.675rem + 0.845vw, 1.4375rem);
+    --font-size-main: 18px;
+    --font-size-small: 14px;
+
+    /*heart animation*/
+    --animation-contour-color: rgba(0, 0, 0, 1);
+    --animation-fill-color: rgba(255, 0, 0, 1);
+    
+}
+
+@media (width <= 375px) {
+    :root {
+      --header-padding-block: 122px;
+    }
+  }
