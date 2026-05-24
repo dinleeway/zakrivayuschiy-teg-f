@@ -10,7 +10,7 @@
 */
 
 .page {
-  min-inline-size: 3var(--space-s);
+  min-inline-size: 3var (--space-s);
   min-block-size: 100dvb;
   font-family: var(--font-main);
   font-variation-settings: "wght" var(--font-weight-regular);
@@ -26,7 +26,6 @@
 
 .dialog {
   display: none;
-
 }
 
 .dialog[open] {
@@ -41,6 +40,7 @@
   width: 100%;
   grid-row: 2;
   text-transform: uppercase;
+  min-height: var(--button-s-height);
 }
 
 .dialog::backdrop {
@@ -62,10 +62,6 @@
   line-height: 150%;
   text-transform: uppercase;
   grid-column: 2;
-}
-
-.dialog__button {
-  min-height: var(--button-s-height);
 }
 
 .dialog__icon {
@@ -152,27 +148,27 @@
 }
 
 .image-3 {
-  filter: invert(0.8) contrast(2) hue-rotate(45deg);
+  filter: hue-rotate(45deg);
 }
 
 .image-4 {
-  filter: grayscale(1) invert(1) contrast(1.8);
+  filter: contrast(1.8);
 }
 
 .image-5 {
-  filter: hue-rotate(270deg) saturate(4) brightness(0.6);
+  filter: brightness(0.6);
 }
 
 .image-6 {
-  filter: blur(3px) contrast(3) saturate(0.2) invert(0.5);
+  filter: sepia(10);
 }
 
 .image-7 {
-  filter: sepia(1) invert(1) hue-rotate(200deg) saturate(5);
+  filter: saturate(5);
 }
 
 .image-8 {
-  filter: contrast(0.3) brightness(2) saturate(0) hue-rotate(120deg);
+  filter: hue-rotate(120deg);
 }
 
 .card__label {
@@ -253,7 +249,7 @@
 
 .card__icon-button:focus-visible {
   outline: none;
-  border-color: var(--main-color); 
+  border-color: var(--main-color);
 }
 
 .card__like-button {
@@ -326,7 +322,7 @@
   position: relative;
   z-index: 1;
   color: var(--secondary-color);
-  mix-blend-mode: difference; 
+  mix-blend-mode: difference;
 }
 
 .save-button {
@@ -341,13 +337,12 @@
 }
 
 .save-button__icon {
-  flex-shrink: 0; 
+  flex-shrink: 0;
   position: relative;
   z-index: 1;
   color: var(--secondary-color);
   mix-blend-mode: difference;
 }
-
 
 @supports (-webkit-text-stroke: 1px var(--secondary-color)) {
   .card__label {
