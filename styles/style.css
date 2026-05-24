@@ -10,7 +10,7 @@
 */
 
 .page {
-  min-inline-size: 3var (--space-s);
+  min-inline-size: 320px;
   min-block-size: 100dvb;
   font-family: var(--font-main);
   font-variation-settings: "wght" var(--font-weight-regular);
@@ -120,7 +120,7 @@
 
 .card__header {
   font-variation-settings: "wght" var(--font-weight-bold);
-  margin-inline: 10px;
+  margin-inline: 12px;
   margin-block: 4px;
 }
 .card__image-wrapper {
@@ -354,7 +354,7 @@
 @media (width<=375px) {
   .dialog[open] {
     padding-inline: 40px;
-    width: 341px;
+    max-width: 341px;
   }
 
   .save-button {
