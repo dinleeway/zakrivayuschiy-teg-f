@@ -16,6 +16,7 @@
   font-variation-settings: "wght" var(--font-weight-regular);
   font-size: var(--font-size-main);
   color: var(--main-color);
+  background-color: var(--secondary-color);
   background-image: var(--bg-image);
   background-size: cover;
   background-attachment: fixed;
