@@ -15,7 +15,6 @@
   font-family: var(--font-main), sans-serif;
   font-variation-settings: "wght" var(--font-weight-regular);
   font-size: var(--font-size-main);
-  line-height: 21px;
   color: var(--main-color);
   background-color: var(--secondary-color);
   background-image: var(--bg-image);
@@ -229,6 +228,10 @@
   display: flex;
   flex-direction: column;
   gap: var(--space-m);
+}
+
+.card__text p {
+  line-height: 21px;
 }
 
 .card__content {
