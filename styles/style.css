@@ -216,6 +216,7 @@
   font-family: var(--font-accent);
   font-weight: var(--font-weight-regular);
   font-size: var(--font-size-small);
+  text-align: right;
   text-transform: uppercase;
   mix-blend-mode: hard-light;
   z-index: 1;
