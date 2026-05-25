@@ -260,7 +260,8 @@
 
 .like-icon {
   display: block;
-  transform-origin: center; /* указан в задании по смыслу анимации масштабирования */
+  transform-origin: center;
+  /* указан в задании по смыслу анимации масштабирования */
 }
 
 .like-icon .contour {
@@ -363,6 +364,7 @@
     gap: 8px;
     min-height: 84px;
   }
+
   .save-button__icon {
     width: 28px;
     height: 28px;
