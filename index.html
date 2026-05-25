@@ -20,33 +20,17 @@
       <h2>закрывающий тег</h2>
     </header>
     <main class="content-width">
-      <dialog class="dialog" id="memory-dialog">
-        <div class="dialog__content">
-          <svg class="dialog__icon" width="39" height="39" aria-hidden="true">
-            <use href="./svg/floppy.svg#floppy"></use>
-          </svg>
-          <p class="dialog__title">Вставьте дискету, чтобы продолжить</p>
-        </div>
-
-        <button
-          class="button dialog__button"
-          type="button"
-          onclick="window['memory-dialog'].close()"
-        >
-          <span class="button__text">ОК</span>
-        </button>
-      </dialog>
       <div class="content">
         <article class="card">
           <h3 class="card__header">
             Фритрек и нулевой спринт: Подготовка к работе
           </h3>
           <div class="card__image-wrapper">
-            <div class="card__label">&lt;Надежда&gt;</div>
+            <p class="card__label">&lt;Надежда&gt;</p>
             <img
               alt="Радость"
               src="images/image-1.gif"
-              class="card__image image-1"
+              class="card__image filter-bright-pop"
             />
           </div>
           <div class="card__content">
@@ -109,11 +93,11 @@
         <article class="card">
           <h3 class="card__header">1 спринт: Я — чистый лист</h3>
           <div class="card__image-wrapper">
-            <div class="card__label">&lt;Приземление&gt;</div>
+            <p class="card__label">&lt;Приземление&gt;</p>
             <img
               alt="Олень перед машиной"
               src="images/image-2.jpg"
-              class="card__image image-2"
+              class="card__image filter-vintage-lime"
             />
           </div>
           <div class="card__content">
@@ -177,11 +161,11 @@
         <article class="card">
           <h3 class="card__header">1 спринт: А если не получится?</h3>
           <div class="card__image-wrapper">
-            <div class="card__label">&lt;Ну и ладно&gt;</div>
+            <p class="card__label">&lt;Ну и ладно&gt;</p>
             <img
               alt="Более менее"
               src="images/image-3.jpeg"
-              class="card__image image-3"
+              class="card__image filter-warm-shift"
             />
           </div>
           <div class="card__content">
@@ -242,11 +226,11 @@
         <article class="card">
           <h3 class="card__header">2 спринт: Погоня за идеалом</h3>
           <div class="card__image-wrapper">
-            <div class="card__label">&lt;Начало конца&gt;</div>
+            <p class="card__label">&lt;Начало конца&gt;</p>
             <img
               alt="Фиолетовый фургон"
               src="images/image-4.gif"
-              class="card__image image-4"
+              class="card__image filter-hard-contrast"
             />
           </div>
           <div class="card__content">
@@ -309,11 +293,11 @@
         <article class="card">
           <h3 class="card__header">2 спринт: О тех, кто рядом</h3>
           <div class="card__image-wrapper">
-            <div class="card__label">&lt;Чатики - любовь&gt;</div>
+            <p class="card__label">&lt;Чатики - любовь&gt;</p>
             <img
               alt="Сердечко"
               src="images/image-5.gif"
-              class="card__image image-5"
+              class="card__image filter-darken-soft"
             />
           </div>
           <div class="card__content">
@@ -380,11 +364,11 @@
         <article class="card">
           <h3 class="card__header">3 спринт: Обходные стратегии</h3>
           <div class="card__image-wrapper">
-            <div class="card__label">&lt;СложноL&gt;</div>
+            <p class="card__label">&lt;СложноL&gt;</p>
             <img
               alt="Сложная работа"
               src="images/image-6.gif"
-              class="card__image image-6"
+              class="card__image filter-deep-sepia"
             />
           </div>
           <div class="card__content">
@@ -448,11 +432,11 @@
         <article class="card">
           <h3 class="card__header">3 спринт: Когда опускаются руки</h3>
           <div class="card__image-wrapper">
-            <div class="card__label">&lt;Самый тяжелый период&gt;</div>
+            <p class="card__label">&lt;Самый тяжелый период&gt;</p>
             <img
               alt="Фиолетовый фургон"
               src="images/image-7.gif"
-              class="card__image image-7"
+              class="card__image filter-hyper-saturate"
             />
           </div>
           <div class="card__content">
@@ -515,11 +499,11 @@
         <article class="card">
           <h3 class="card__header">«Сейчас я здесь»</h3>
           <div class="card__image-wrapper">
-            <div class="card__label">&lt;Гоним коней&gt;</div>
+            <p class="card__label">&lt;Гоним коней&gt;</p>
             <img
               alt="Фиолетовый фургон"
               src="images/image-8.gif"
-              class="card__image image-8"
+              class="card__image filter-cold-shift"
             />
           </div>
           <div class="card__content">
@@ -599,6 +583,22 @@
         </button>
       </div>
     </main>
+    <dialog class="dialog" id="memory-dialog">
+      <div class="dialog__content">
+        <svg class="dialog__icon" width="39" height="39" aria-hidden="true">
+          <use href="./svg/floppy.svg#floppy"></use>
+        </svg>
+        <p class="dialog__title">Вставьте дискету, чтобы продолжить</p>
+      </div>
+
+      <button
+        class="button dialog__button"
+        type="button"
+        onclick="window['memory-dialog'].close()"
+      >
+        <span class="button__text">ОК</span>
+      </button>
+    </dialog>
     <script src="./scripts/like.js"></script>
   </body>
 </html>
