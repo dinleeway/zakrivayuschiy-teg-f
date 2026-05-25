@@ -24,6 +24,43 @@
   align-items: center;
 }
 
+.button {
+  border: var(--border-width) solid var(--main-color);
+  background-color: var(--secondary-color);
+  transition: box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.button::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background-color: var(--main-color);
+  translate: -100% -20%;
+  transition: translate 0.5s ease-in-out;
+}
+
+.button:hover::before {
+  translate: 0 0;
+}
+
+.button:focus-visible {
+  outline: none;
+  box-shadow: 2px 2px 0px 0px var(--main-color);
+}
+
+.button__text {
+  font-family: var(--font-accent);
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-small);
+  position: relative;
+  z-index: 1;
+  color: var(--secondary-color);
+  mix-blend-mode: difference;
+}
+
 .dialog {
   display: none;
 }
@@ -80,10 +117,6 @@
   padding-block: var(--header-padding-block);
 }
 
-.header__logo {
-  width: var(--logo-size);
-}
-
 .header h1 {
   font-family: var(--font-accent);
   font-weight: var(--font-weight-regular);
@@ -120,8 +153,8 @@
 
 .card__header {
   font-variation-settings: "wght" var(--font-weight-bold);
-  margin-inline: 12px;
-  margin-block: 4px;
+  padding-inline: 12px;
+  padding-block: 4px;
 }
 
 .card__image-wrapper {
@@ -209,33 +242,6 @@
   justify-content: end;
 }
 
-.button {
-  border: var(--border-width) solid var(--main-color);
-  background-color: var(--secondary-color);
-  transition: box-shadow 0.3s ease;
-  position: relative;
-  overflow: hidden;
-  cursor: pointer;
-}
-
-.button::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background-color: var(--main-color);
-  translate: -100% -20%;
-  transition: translate 0.5s ease-in-out;
-}
-
-.button:hover::before {
-  translate: 0 0;
-}
-
-.button:focus-visible {
-  outline: none;
-  box-shadow: 2px 2px 0px 0px var(--main-color);
-}
-
 .card__icon-button {
   display: flex;
   align-items: center;
@@ -317,18 +323,8 @@
   transition: fill 0.3s linear 0.06s;
 }
 
-.button__text {
-  font-family: var(--font-accent);
-  font-weight: var(--font-weight-regular);
-  font-size: var(--font-size-small);
-  position: relative;
-  z-index: 1;
-  color: var(--secondary-color);
-  mix-blend-mode: difference;
-}
-
 .save-button {
-  max-width: fit-content;
+  inline-size: fit-content;
   padding-inline: var(--space-s);
   min-height: var(--button-m-height);
   display: flex;
@@ -362,7 +358,6 @@
   .save-button {
     flex-direction: column;
     gap: 8px;
-    min-height: 84px;
   }
 
   .save-button__icon {
