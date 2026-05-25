@@ -268,7 +268,6 @@
 .like-icon {
   display: block;
   transform-origin: center;
-  /* указан в задании по смыслу анимации масштабирования */
 }
 
 .like-icon .contour {
